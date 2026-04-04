@@ -7,15 +7,18 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 import flavourcraft from "@/assets/flavourcraft.jpg";
 import fitquest from "@/assets/fitquest.jpg";
 import community from "@/assets/community.jpg";
+import nexus from "@/assets/nexus.png"
 import '@/index.css'
 
 
 const techSkills = [
   { name: "HTML", percent: 95 },
   { name: "CSS", percent: 80 },
+  { name: "Tailwind", percent: 50},
   { name: "JavaScript", percent: 45 },
   { name: "Python", percent: 50 },
   { name: "React", percent: 75 },
+  { name: "Java", percent: 75},
 ];
 
 const proSkills = [
@@ -38,12 +41,17 @@ const services = [
     title: "Frontend Dev",
     desc: "Frontend development focused on creating attractive, responsive user interfaces with HTML, CSS, JavaScript and React that function well across devices and browsers.",
   },
+  {
+    title: "Backend Dev",
+    desc: "Backend development focused on building scalable RESTful APIs using Java and the Spring Boot, with CRUD operations, JPA for database management, secure authentication using JWT and Spring Security, and efficient data handling."
+  },
 ];
 
 const projects = [
   { title: "FlavourCraft", image: flavourcraft },
   { title: "FitQuest", image: fitquest },
   { title: "UFH Community", image: community },
+  { title: "Nexus Store", image: nexus},
 ];
 
 const Index = () => {
