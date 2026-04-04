@@ -2,7 +2,7 @@ Wanga Somhlaba Portfolio 🌐
 
 A modern, responsive personal portfolio website showcasing the work, skills, and projects of Wanga Somhlaba, a Software Developer and Computer Science student from Bizana, Eastern Cape.
 
-🔗 Live Demo: 
+🔗 Live Demo: https://somhlabaportfolio.netlify.app/
 
 🚀 Features
 Hero section with profile photo and introduction
