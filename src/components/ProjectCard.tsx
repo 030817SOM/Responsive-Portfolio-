@@ -3,9 +3,10 @@ import '@/index.css'
 interface ProjectCardProps {
   title: string;
   image: string;
+  link?: string;
 }
 
-const ProjectCard = ({ title, image }: ProjectCardProps) => (
+const ProjectCard = ({ title, image, link = "#" }: ProjectCardProps) => (
   <div className="group bg-card rounded-lg overflow-hidden border border-border hover:-translate-y-2 transition-all duration-300 hover:shadow-[var(--glow-cyan-sm)]">
     <div className="aspect-video overflow-hidden">
       <img
@@ -17,9 +18,14 @@ const ProjectCard = ({ title, image }: ProjectCardProps) => (
     </div>
     <div className="p-5 flex items-center justify-between">
       <h3 className="font-display font-semibold text-lg text-foreground">{title}</h3>
-      <button className="text-sm font-medium px-4 py-1.5 rounded-full bg-secondary text-primary border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-colors">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-sm font-medium px-4 py-1.5 rounded-full bg-secondary text-primary border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-colors"
+      >
         View
-      </button>
+      </a>
     </div>
   </div>
 );

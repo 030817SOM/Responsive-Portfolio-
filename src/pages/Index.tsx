@@ -48,10 +48,10 @@ const services = [
 ];
 
 const projects = [
-  { title: "FlavourCraft", image: flavourcraft },
-  { title: "FitQuest", image: fitquest },
-  { title: "UFH Community", image: community },
-  { title: "Nexus Store", image: nexus},
+  { title: "FlavourCraft", image: flavourcraft, link: "https://food-store-gamma.vercel.app/" },
+  { title: "FitQuest", image: fitquest, link: "https://customer-fitness.vercel.app/" },
+  { title: "UFH Community", image: community, link: "https://ufh-community.vercel.app/" },
+  { title: "Nexus Store", image: nexus, link: "https://nexus-wanga-dev.vercel.app/"},
 ];
 
 const Index = () => {
