@@ -7,8 +7,10 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 import flavourcraft from "@/assets/flavourcraft.jpg";
 import fitquest from "@/assets/fitquest.jpg";
 import community from "@/assets/community.jpg";
-import nexus from "@/assets/nexus.png"
+import nexus from "@/assets/nexus.png";
+import resturent from "@/assets/resturent.png"
 import '@/index.css'
+import ContactForm from "@/components/ContactForm.tsx";
 
 
 const techSkills = [
@@ -52,6 +54,7 @@ const projects = [
   { title: "FitQuest", image: fitquest, link: "https://customer-fitness.vercel.app/" },
   { title: "UFH Community", image: community, link: "https://ufh-community.vercel.app/" },
   { title: "Nexus Store", image: nexus, link: "https://nexus-wanga-dev.vercel.app/"},
+  { title: "Cafe Picobella", image: resturent, link: "https://picobella.netlify.app/"}
 ];
 
 const Index = () => {
@@ -185,34 +188,7 @@ const Index = () => {
                 I'm glad you've visited my portfolio! If you have any questions, suggestions, or would like to collaborate, please feel free to contact me. I will endeavor to reply to your message as soon as possible.
               </p>
             </div>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                className="w-full h-12 rounded-full bg-card border border-border px-5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-              />
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full h-12 rounded-full bg-card border border-border px-5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-              />
-              <input
-                type="text"
-                placeholder="Enter your subject"
-                className="w-full h-12 rounded-full bg-card border border-border px-5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-              />
-              <textarea
-                placeholder="Enter your message"
-                rows={4}
-                className="w-full rounded-2xl bg-card border border-border px-5 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
-              />
-              <button
-                type="submit"
-                className="w-full h-12 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:-translate-y-0.5 transition-all duration-200 hover:shadow-[var(--glow-cyan-sm)]"
-              >
-                Submit
-              </button>
-            </form>
+            <ContactForm/>
           </div>
         </div>
       </section>
