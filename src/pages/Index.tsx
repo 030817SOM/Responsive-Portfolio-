@@ -9,6 +9,7 @@ import fitquest from "@/assets/fitquest.jpg";
 import community from "@/assets/community.jpg";
 import nexus from "@/assets/nexus.png";
 import resturent from "@/assets/resturent.png";
+import lead from "@/assets/lead.png"
 import '@/index.css'
 import ContactForm from "@/components/ContactForm.tsx";
 
@@ -54,7 +55,8 @@ const projects = [
   { title: "FitQuest", image: fitquest, link: "https://customer-fitness.vercel.app/" },
   { title: "UFH Community", image: community, link: "https://ufh-community.vercel.app/" },
   { title: "Nexus Store", image: nexus, link: "https://nexus-wanga-dev.vercel.app/"},
-  { title: "Cafe Picobella", image: resturent, link: "https://picobella.netlify.app/"}
+  { title: "Cafe Picobella", image: resturent, link: "https://picobella.netlify.app/"},
+  {title: "Wanga's CRM", image: lead, link: "https://leads-crms.netlify.app/"}
 ];
 
 const Index = () => {
