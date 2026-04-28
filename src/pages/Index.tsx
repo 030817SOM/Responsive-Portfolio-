@@ -70,7 +70,7 @@ const Index = () => {
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary text-glow mb-4">
               Wanga Somhlaba
             </h1>
-            <p className="text-xl text-foreground font-medium mb-1">Software Developer</p>
+            <p className="text-xl text-foreground font-medium mb-1">Data Science Enthusiast | Full Stack Web Developer</p>
             <p className="text-muted-foreground">Computer Science Student</p>
             <div>
               <a
