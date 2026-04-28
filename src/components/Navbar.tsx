@@ -2,13 +2,16 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import '@/index.css'
 
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+type NavItem = { label: string; href: string } | { label: string; href: string;  };
+
+const navLinks: NavItem[] = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Skills", href: "/#skills" },
+  { label: "Projects", href: "/#projects" },
+  { label: "Certifications", href: "/certifications" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Navbar = () => {
