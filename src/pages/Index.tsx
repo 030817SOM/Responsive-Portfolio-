@@ -8,7 +8,7 @@ import flavourcraft from "@/assets/flavourcraft.jpg";
 import fitquest from "@/assets/fitquest.jpg";
 import community from "@/assets/community.jpg";
 import nexus from "@/assets/nexus.png";
-import resturent from "@/assets/resturent.png"
+import resturent from "@/assets/resturent.png";
 import '@/index.css'
 import ContactForm from "@/components/ContactForm.tsx";
 
@@ -72,6 +72,27 @@ const Index = () => {
             </h1>
             <p className="text-xl text-foreground font-medium mb-1">Software Developer</p>
             <p className="text-muted-foreground">Computer Science Student</p>
+            <div>
+              <a
+                  href="https://github.com/030817SOM"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hover:text-primary transition-colors duration-300 mt-3 inline-flex items-center gap-2 text-sm font-semibold"
+                >
+                  <i className="fab fa-github"></i> GitHub
+                </a>
+              <a
+                  href="https://linkedin.com/in/https://www.linkedin.com/in/wanga-somhlaba/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hover:text-primary transition-colors duration-300 mt-3 inline-flex items-center gap-2 text-sm font-semibold ml-6"
+                >
+                  <i className="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="/resume/Wanga Somhlaba Resume.pdf" download className="bg-primary rounded-full p-2  hover:text-primary transition-colors duration-300 mt-3 inline-flex items-center gap-2 text-sm font-bold ml-6">
+                 Download CV
+              </a>
+            </div>
           </div>
           <div className="flex-shrink-0">
             <img
