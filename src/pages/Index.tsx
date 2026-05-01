@@ -10,6 +10,7 @@ import community from "@/assets/community.jpg";
 import nexus from "@/assets/nexus.png";
 import resturent from "@/assets/resturent.png";
 import lead from "@/assets/lead.png"
+import supermarket from "@/assets/supermarket.png";
 import '@/index.css'
 import ContactForm from "@/components/ContactForm.tsx";
 
@@ -58,6 +59,10 @@ const projects = [
   { title: "Cafe Picobella", image: resturent, link: "https://picobella.netlify.app/"},
   {title: "Wanga's CRM", image: lead, link: "https://leads-crms.netlify.app/"}
 ];
+
+const mlProjects = [
+  {title: "Supermarket Dashboard", image: supermarket, link: "https://retailytics.netlify.app/"}
+]
 
 const Index = () => {
   return (
@@ -192,6 +197,20 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p) => (
               <ProjectCard key={p.title} {...p} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/*Machine Learning project */}
+      <section id="ml-projects" className="py-20">
+        <div className="container">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary text-left mb-14">
+            Machine Learning Projects
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {mlProjects.map((ml) =>(
+              <ProjectCard key={ml.title} {...ml} />
             ))}
           </div>
         </div>
